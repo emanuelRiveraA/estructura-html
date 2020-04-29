@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina web de prueba">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de prueba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="recycling-symbol-icon-png-favpng-mJdBBgkeBUbSrZhzEsxwHNYHv_t.jpg">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="">
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <article>
+        <h1>El titulo de mi pagina</h1>
+        <section>
+            <h2>Experiencia de mi dia a dia</h2>
+        </section>
+        <section>
+            <h3>dia 1:</h3>
+            <p>fue increible</p>
+        </section>
+        <section>
+            <h3>dia 2:</h3>
+            <p>no fue bien</p>
+        </section>
+    </article>
+    <aside>
+        <p>compra este articulo en la tienda</p>
+    </aside>
+    <p>Ingeedientes de mi lista de platillos son:</p>
+    <ul>
+        <li>mole
+            <ol>
+                <li>carne</li>
+                <li>spaguetti</li>
+            </ol>
+        </li>
+        <li>Arros con pollo</li>
+        <li>huevo
+            <ol>
+                <li>salchicha</li>
+                <li>jamon</li>
+                <li>chorizo</li>
+            </ol>
+        </li>
+        <li>pescado
+            <ol>
+                <li>salsa</li>
+                <li>papa</li>
+                <li>tomate</li>
+                <li>calabaza</li>
+            </ol>
+        </li>
+    </ul>
+
+    <dl>
+        <dt>España</dt>
+        <dd>Madrid</dd>
+        <dt>Bolivia</dt>
+        <dd>La paz</dd>
+    </dl>
+
+    <figure>
+        <pre>
+            <code>
+                funtion hola(){
+                    return "hola"; 
+                }
+            </code>
+        </pre>
+        <figcaption>
+            linea de codigo para javascript
+        <figcaption>
+    </figure>
+
+    <p>parrafo <span>span</span></p>
+    <strong>strong</strong><em>em</em>
+
+    <h1>Marcadores</h1>
+    <ol id="indice">
+        <li><a href="#capitulo1">Capitulo 1</a></li>
+        <li><a href="#capitulo2">Capitulo 2</a></li>
+        <li><a href="#capitulo3">Capitulo 3</a></li>
+    </ol>
+
+    <h2 id="capitulo1">Capitulo 1</h2>
+    <a href="#indice">Ir al Indice</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae praesentium, odio nisi non ducimus aliquam minima similique explicabo, assumenda maiores, neque impedit perferendis suscipit minus quam consequatur distinctio? Nemo, esse. Et deleniti itaque iure id odio. Itaque commodi, quo sint voluptatum sit dolore. Totam, maxime ut aut odio fugiat a fuga eum.</p>
+    <h2 id="capitulo2">Capitulo 2</h2>
+    <a href="#indice">Ir al Indice</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et deleniti itaque iure id odio. Itaque commodi, quo sint voluptatum sit dolore. Totam, maxime ut aut odio fugiat a fuga eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio natus eaque tempora, amet delectus et suscipit cupiditate, facere harum accusantium inventore soluta fuga corporis aliquam incidunt architecto vitae. Officiis, pariatur.</p>
+    <h2 id="capitulo3">Capitulo 3</h2>
+    <a href="#indice">Ir al Indice</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et deleniti itaque iure id odio. Itaque commodi, quo sint voluptatum sit dolore. Totam, maxime ut aut odio fugiat a fuga eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi deleniti veniam commodi, tempora quo perferendis quia libero, sint delectus voluptates dolore ut minus ad eaque. Sapiente quo quia quis similique!</p>
+    
+    <!-- <img src="img/bride.jpg" 
+         srcset="img/raton.jpg 1.5x, 
+                 img/snow.jpg 2x" alt="foto de una novia"> -->
+    <!-- <img src="img/hojas.jpg" srcset="img/snow.jpg 1.5x, img/vias.jpg 2x" alt="foto de una novia">      -->
+    
+    <!-- para reedimensionar imagenes automaticamente con HTML -->
+    <picture>
+        <source srcset="img/vias.jpg" media="(min-width:800px)">
+        <source srcset="img/snow.jpg" media="(min-width:600px)">        
+        <img src="img/hojas.jpg">
+    </picture>
+    <hr>
+    <!-- <h1>MICRODATOS</h1> -->
+    <!-- https://search.google.com/structured-data/testing-tool?hl=es  para analizar los microdatos con google-->
+    <!-- https://developers.facebook.com/tools/debug/ para analizar los microdatos con facebook -->
+    <article itemscope itemtype="http://schema.org/Blog">
+        <h2>Curso de HTML 5.2</h2>
+        <p>El curso comenzara .....</p>
+        <footer>
+            <p itemprop="author">Adrian padilla</p>
+        </footer>
+    </article>
+    <hr>
+    <!-- TABLAS -->
+    <table>
+        <caption>Mi horaio de clases</caption>
+        <!-- para pintar columnas -->
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col id="morado">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td rowspan="2">HTML</td>
+                <td>PHP</td>
+                <td>JAVA</td>
+                <td>GO</td>
+                <td rowspan="2">RUBY</td>
+           </tr> 
+           <tr>
+                <td>ANGULAR</td>
+                <td>NODEJS</td>
+                <td>UX-I</td>
+           </tr> 
+           <tr>
+               <td colspan="5">Recreo</td>
+           </tr>
+           <tr style="background: red;">
+                <td>HTML</td>
+                <td>PHP</td>
+                <td>PWA</td>
+                <td>GO</td>
+                <td>SQL</td>
+            </tr> 
+        </tbody>  
+        <tfoot>
+            <tr >
+                <td>3 creditos</td>
+                <td>5 creditos</td>
+                <td>12 creditos</td>
+                <td>20 creditos</td>
+                <td>4 creditos</td>
+            </tr>
+        </tfoot>      
+    </table>
+    <hr>
+    <h1>FORMULARIOS</h1>
+    <form action="form.php">
+        <fieldset>
+            <legend>Tus datos personales</legend>
+            <div><label>Ingrese su nombre de usuario:<input name="username" required></label></div><!-- ESTA ES LA MEJOR FORMA DE CONECTAR UN INPUT CON UN LABEL-->
+            <div><label>Ingrese su Email<input type="email" name="email" id="email" required></label></div> 
+        </fieldset> 
+        <fieldset>
+            <legend>Tis datos en la plataforma</legend>
+            <div><label>Ingrese su Fecha de nacimiento<input type="date" name="date" id="date"></label></div>
+            <div><label>Ingrese la cantidad:<input type="number" name="number" id="" value="2" readonly></label></div><!-- redonly para que no edite-->
+            <div><label>Ingrese su contraseña:<input type="password" id="password" name="password"></label></div><!-- ESTA ES LA MEJOR FORMA DE CONECTAR UN INPUT CON UN LABEL-->
+        </fieldset>   
+        <fieldset>
+            <legend>Tus pasatiempos</legend>
+            <label><input type="checkbox" name="cine" id="">cine</label>
+            <label><input type="checkbox" name="deporte" id="">deporte</label>
+            <label><input type="checkbox" name="leer" id="">leer</label>
+            <label><input type="checkbox" name="musica" id="">musica</label>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label><input type="radio" name="sexo" id="">Hombre</label>
+            <label><input type="radio" name="sexo" id="">mujer</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select y options</legend>
+            <label for="country">País</label>
+            <select name="country" id="country">
+                <optgroup label="America">
+                    <option value="me">México</option>
+                    <option value="pe">Perú</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>   
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="es">España</option>
+                    <option value="it">Italia</option>
+                    <option value="in">Inglaterra</option>
+                </optgroup>                
+            </select>
+            <div>
+            <textarea name="msj" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+        </fieldset>        
+        <!-- <button>Enviar</button> -->
+        <input type="submit" value="Iniciar sesión">
+    </form>
+    <hr>
+    <h1>contenido interactivo</h1>
+    <details>
+        <summary id="abrir">HTML</summary>
+        <p>Lenguaje de marcado de hipertexto</p>
+    </details>
+    <dialog id="modal">
+        <h2>Promoción del dia de hoy</h2>
+        <p>Tenemos los burritos en promocion</p>
+        <footer>Emanuel Rivera</footer>
+        <button id="close">Cerrar</button>
+    </dialog>
+    <hr>
+    <footer>
+        <p>Emanuel Rivera</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
